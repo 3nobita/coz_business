@@ -1,216 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Business Website</title>
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
     <style>
-        * {
-            margin:0;
-            padding:0;
-          }
-          header {
-            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://www.10wallpaper.com/wallpaper/1920x1200/1407/Chicago_Skyline-Cities_HD_Wallpaper_1920x1200.jpg);
-            height:100vh;
-            background-size:cover;
-            background-position:center;
-          }
-          .main-nav {
-            float:right;
-            list-style:none;
-            margin-top:30px;
-          }
-          .main-nav li {
-            display:inline-block;
-          }
-          .main-nav li a {
-            color:white;
-            text-decoration:none;
-            padding: 5px 20px;
-            font-family: 'Dosis', sans-serif, "Roboto";
-            font-size:15px;
-          }
-          .main-nav li.active a {
-            border:1px solid white;
-          }
-          .main-nav li a:hover {
-            border:1px solid white;
-          }
-          .logo img {
-            width:150px;
-            height:auto;
-            float:left;
-          }
-          body {
-            font-family: monospace;
-          }
-          .row {
-            max-width:1200px;
-            margin:auto;
-          }
-          .hero {
-            position:absolute;
-            width:1200px;
-            margin-left:0px;
-            margin-top:15vh;
-          }
-          h1 {
-            color:white;
-            text-transform:supercase;
-            font-size:70px;
-            text-align:center;
-            margin-top:275px;
-          }
-          .button {
-            margin-top:30px;
-            margin-left:440px;
-          }
-          .btn {
-            border:1px solid white;
-            padding:10px 30px;
-            color:white;
-            text-decoration:none;
-            margin-right:5px;
-            font-size:13px;
-            text-transform:uppercase;  
-          }
-          .btn-one{
-            background-color:darkorange;
-            font-family: 'Dosis', sans-serif, "Roboto";
-          }
-          .btn-two{
-            font-family: 'Dosis', sans-serif, "Roboto";
-          }
-          .btn-two:hover{
-            background-color:darkorange;
-            transition: all 0.5s ease-in;
-          }
-          #myBtn {
-              display: none; /* Hidden by default */
-              position: fixed; /* Fixed/sticky position */
-              bottom: 20px; /* Place the button at the bottom of the page */
-              right: 30px; /* Place the button 30px from the right */
-              z-index: 99; /* Make sure it does not overlap */
-              border: none; /* Remove borders */
-              outline: none; /* Remove outline */
-              background-color: darkorange; /* Set a background color */
-              color: white; /* Text color */
-              cursor: pointer; /* Add a mouse pointer on hover */
-              padding: 15px; /* Some padding */
-              border-radius: 10px; /* Rounded corners */
-              font-size: 18px; /* Increase font size */
-          }
-          
-          #myBtn:hover {
-              background-color: #555; /* Add a dark-grey background on hover */
-          }
-          
-          #myBtn .fa {
-              font-size:30px;
-              margin-top:-5px;
-              margin-left:1px;
-          }
-          #services, #about {
-            width:100%;
-            height:100vh;
-            background-color:white;
-          }
-          #services .container, #about .container-about {
-            margin: 50px auto;
-            padding:50px;
-          }
-          #services .container p {
-            padding-top:15px;
-            text-align:left;
-            text-size:16px;
-            font-family: Poppins;
-          }
-          #about .container-about p {
-            padding-top:15px;
-            margin-left:40px;
-            margin-bottom:40px;
-            text-align:left;
-            text-size:16px;
-            font-family: Poppins;
-            width: 50%;
-            float:left;
-          }
-          #about .container-about img {
-            padding-right:20px;
-            margin-bottom:10px;
-            height: 100px;
-            float:right;
-          }
+        /* styles.css */
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Page-specific styles */
+        .container #gymDetails,
+        .container #schoolDetails {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .container #gymDetails h2{
+            background-color: #629ac0;
+
+        }
+        .container #schoolDetails h2 {
+            background-color: #65c062;
+        }
+
+        .container #gymDetails p,
+        .container #schoolDetails p {
+            color: #666;
+        }
     </style>
-  </head>
-  <body>
-    <header>
-      <div class="row">
-        <div class="logo">
-          <img src="https://purepng.com/public/uploads/large/google-stadia-logo-3cx.png">
+</head>
+
+<body>
+    <div class="container">
+        <div id="gymDetails" style="display:none;">
+            <h2>GYM Details</h2>
+            <p>Details about the GYM go here...</p>
+            <button><a href="https://3nobita.github.io/Main_cozmoh/">back</a></button>
         </div>
-        <ul class="main-nav">
-          <li class="active"><a href=""> HOME </a></li>
-          <li><a href="#services"> SERVICES </a></li>
-          <li><a href="#about"> ABOUT </a></li>
-          <li><a href="#"> CONTACT </a></li>
-          <li><a href="#"> NEWS </a></li>
-          <li><a href="#"> FAQ </a></li>
-        </ul>
-      </div>
-      <div class="hero">
-        <h1>Are You Ready?</h1>
-          <div class="button">
-            <a href="#services" class="btn btn-one"> Order </a>
-            <a href="#about" class="btn btn-two"> Explore </a>
+        <div id="schoolDetails" style="display:none;">
+            <h2>School Details</h2>
+            <p>Details about the school go here...</p>
+            <button><a href="https://3nobita.github.io/Main_cozmoh/">back</a></button>
         </div>
-      </div>
-    </header>
-    
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
-    
-    <section id="services">
-      <div class="container">
-        <article>
-          <h2>Services</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </article>
-      </div>
-    </section>
-    
-    
-    <section id="about">
-      <div class="container-about">
-        <article>
-          <h2>About</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p><img src="https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?auto=compress&cs=tinysrgb&h=350">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><img src="https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?auto=compress&cs=tinysrgb&h=350">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><img src="https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?auto=compress&cs=tinysrgb&h=350">
-        </article>
-      </div>
-    </section>
+    </div>
+
     <script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        // JavaScript code to show/hide details based on query parameter
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const type = urlParams.get('type');
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
+            if (type === 'gym') {
+                document.getElementById('gymDetails').style.display = 'block';
+            } else if (type === 'school') {
+                document.getElementById('schoolDetails').style.display = 'block';
+            }
+        });
+    </script>
+</body>
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
-  </body>
- </html>
+</html>
